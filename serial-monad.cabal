@@ -1,0 +1,22 @@
+name:               serial-monad
+version:            0.1.0.0
+synopsis:           A Monadic Interface for facilitating serial communication
+license:            BSD3
+license-file:       LICENSE
+author:             Preston Gray
+maintainer:         prestongray97@gmail.com
+build-type:         Simple
+extra-source-files: CHANGELOG.md
+cabal-version:      >=1.10
+
+library
+  exposed-modules:  Serial.Monad
+                    Serial.Monad.Log
+  build-depends:    base >=4.12 && <4.13
+  ghc-options:      -Wall
+                    -Werror
+                    -Wincomplete-record-updates
+                    -Wincomplete-uni-patterns
+                    -O3
+  hs-source-dirs:   src
+  default-language: Haskell2010
